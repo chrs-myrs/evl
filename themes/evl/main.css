@@ -1,0 +1,729 @@
+
+
+body {
+    background-color: #005131; /* green */
+    background-image: url('images/background_2.jpg');
+    overflow-y: scroll;
+    background-attachment: fixed;
+}
+
+section#page, section#post-footer {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+section#page {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.33),5px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+section#page {
+    border: solid 2px #a57626; /* gold */
+    border-radius: 16px;
+    background-color: #f9f7f3; /* beige */
+    
+    background-image: url('images/cup.jpg');
+    background-position: 50% 225px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header {
+    padding-bottom: 15px;
+    position: relative;
+    height: 165px;
+}
+
+header .header-image {
+    position: absolute;
+}
+
+header #evl-logo {
+    top: 20px;
+    left: 20px;
+}
+
+header #evl-title {
+    top: 33px;
+    left: 260px;
+}
+
+header #gk-logo {
+    top: 29px;
+    right: 20px;
+}
+
+header #navarea {
+    position: absolute;
+    top: 156px;
+    line-height: 32px;
+    height: 32px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+section#body {
+    padding: 20px;
+}
+
+.with-sidebar section#content {
+    margin-left: 200px;
+    /* width: 722px; */
+}
+
+section#sidebar {
+    float: left;
+    width: 190px;
+    padding-right: 10px;
+}
+
+.content-block {
+    border: solid 2px #a57626; /* gold */
+    border-radius: 10px;
+    background-image: url('images/box_background.png');
+    padding: 17px;
+    margin-bottom: 15px;
+    background-repeat: repeat !important;
+    overflow-y: auto;
+}
+
+#marquee_holder {
+    width: 760px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    cursor: e-resize;
+font-weight: bold;
+}
+
+/*
+.content-block h2, .sidebar-block h2, .content-block h3, .sidebar-block h3, .content-block h4, .sidebar-block h4  {
+    margin: 0 0 12px 0;
+}*/
+
+section#copyright {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section#footer {
+    clear: both;
+}
+
+section#post-footer {
+    color: white;
+    text-shadow: 5px 5px 2px #000;
+}
+
+section#post-footer .designers {
+    float: right;
+}
+
+div.cleared, div.cl {
+    clear: both;
+}
+
+div.filler {
+    display: table-cell;
+    width: 99%;
+    background-color: #005131; /* green */
+}
+
+section#content img {
+    margin: 0 15px;
+}
+
+/* Navigation Area */
+
+header #navarea ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    position: relative;
+    left:50%;
+    float: left;
+}
+
+header #navarea ul a {
+    text-decoration: none;
+}
+
+header #navarea ul > li > a {
+    text-transform: uppercase;
+    color: #fff;
+    transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    -webkit-transition: color .5s;
+    -ie-transition: color .5s;
+    font-size: 18px;
+    font-family: 'Roboto', Arial, sans-serif;
+font-weight: bold;
+}
+
+header #navarea ul > li {
+    background-color: #005131; /* green */
+    padding: 0 22px;
+    float: left;
+    position: relative;
+    right: 50%;
+    
+    transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -ie-transition: background-color .5s;
+}
+
+header #navarea ul > li:hover:not(.nav-selected) {
+    background-color: rgba(0, 81, 49, 0.3);
+    cursor: pointer;
+}
+
+header #navarea ul li.nav-selected a, .jsnav ul li.nav-selected a, header #navarea ul li.nav-selected, .jsnav ul li.nav-selected {
+    pointer: default;
+}
+
+header #navarea ul li.nav-selected a, .jsnav ul li.nav-selected a, header #navarea ul li:hover a {
+    color: #a57626; /* gold */
+}
+
+header #navarea ul li a.nolink, .jsnav ul li a.nolink, header #navarea ul li:hover a.nolink, .jsnav ul li:hover a.nolink {
+    cursor: default;
+}
+
+.jsnav {
+	display:none;
+	position:absolute;
+	z-index:1000;
+        overflow: hidden;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin: 5px;
+}
+.jsnav ul {
+	height:auto;
+	/*border-bottom: solid 3px #000;*/
+	margin: 0;
+	padding: 0;
+        left:0;
+        list-style: none;
+        min-width: 200px;
+        position: relative;
+        background: #005131;
+        background: -webkit-gradient(linear, 0 top, 0 center, from(#005131), to(rgba(0, 81, 49, .65))), -webkit-gradient(linear, 0 center, 0 bottom, from(rgba(0, 81, 49, .65)), to(#005131));
+        background: gradient(linear, 0 top, 0 center, from(#005131), to(rgba(0, 81, 49, .65))), gradient(linear, 0 center, 0 bottom, from(rgba(0, 81, 49, .65)), to(#005131));
+        background: -moz-linear-gradient(to bottom, #005131, rgba(0, 81, 49, .65), #005131);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005131', endColorstr='#196245');
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+}
+
+.jsnav ul li {
+	float: none;
+	/*border: solid 1px #000;
+	border-bottom: none;*/
+	height: auto;
+	margin: 0;
+	padding: 1px 4px;
+	text-align:left;
+	/* background-color: #005131;  green */
+	position:relative;
+        right:0;
+        font-family: 'Roboto', Arial, sans-serif;
+font-weight: bold;
+		}
+.jsnav ul li:hover {
+	background-color:rgba(0, 81, 49, .7); /* green */
+        cursor: pointer;
+}
+.jsnav ul li a {
+	color: #fff;
+        font-size: 15px;
+        margin: 0;
+        padding: 0 18px;
+        font-size: 18px;
+        line-height: 36px;
+        text-decoration: none;
+        text-align: center;
+}
+.jsnav ul li:hover a, .jsnav ul li a:hover {
+	color: #a57626; /* gold */
+}
+.jsnav ul li .arrow {
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #FFF;
+        position: absolute;
+        top: 12px;
+        right: 8px;
+}
+.jsnav ul li:hover .arrow {
+	border-left-color: #FFF;
+}
+
+/* Home Page Only */
+
+.home_page section#content {
+    position: relative;
+}
+
+.home_page .home_page-image-holder {
+    position: relative;
+    float: right;
+    padding: 5px;
+    margin: 0 0 10px 10px;
+}
+
+/* News Pages */
+
+.ccm-tags-display ul.ccm-tag-list li {
+    background-color: #8D703E;
+    border-radius: 5px;
+}
+
+.searchResult p {
+    text-align: left;
+}
+
+.searchResult h3 a {
+    color: #005131; /* green */
+}
+
+.searchResult {
+    margin-top: 15px;
+    padding: 5px 5px 5px 10px;
+    border-left: solid 2px #005131; /* green */
+}
+
+.searchResult:hover {
+    border-left: solid 2px #a57626; /* gold */
+    background-color: #fff;
+}
+
+.news-item .image-link {
+    margin: 10px 15px 5px 5px;
+}
+
+.news-item .image-link a {
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+        display: block;
+        border: solid 1px #666;
+        width: 200px;
+        height: 200px;
+}
+
+/* Quick Links */
+
+.side-links, .sidebar-block {
+    margin-bottom: 15px;
+}
+
+.sidebar-block h3 {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.side-links hr, .sidebar-block hr {
+    height: 1px; 
+    border: none;
+    background-image: url('images/ql_dots.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: transparent;
+}
+
+.side-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side-links li {    
+    list-style: none;
+    padding: 5px 0;
+}
+
+.side-links a, .side-links a:visited {
+    text-decoration: none;
+    color: #a57626;
+}
+
+.side-links a:hover {
+    text-decoration: underline;
+}
+
+.side-links a:hover, .side-links li.nav-selected a {
+    color: #000;
+}    
+
+.side-links p {
+    padding: 5px 0;
+}
+
+/* Table Boxes */
+
+.tablebox {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ie-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+    background-color: #fff; 
+    border: solid 2px #A57626;
+    margin: 20px 10px 0 10px;
+    overflow: hidden;
+    float: left;
+    width: 436px;
+}
+
+.tablebox h2 {
+    margin: 0;
+    padding: 3px 10px 4px 10px;;
+    background-color: #a57626; /* gold */
+    color: #fff;
+}
+
+.tablebox table {
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.tablebox table td {
+    padding: 5px;
+}
+
+.tablebox table td:first-child {
+    width: 40%;
+}
+
+.tablebox table .selected-team td {
+    font-weight: bold;
+    background-color: #005131; /* green */
+    color: #fff;
+}
+
+#body div.content-throbber {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+#body div.content-throbber img {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* History page styles */
+
+#history-page table {
+    margin: 15px auto;
+    width: 640px;
+    background-color: #fff;
+}
+
+#history-page table p {
+    margin: 0 15px;
+}
+
+#history-page table h2 {
+    padding-top: 15px;
+    paddin-bottom: 5px;
+}
+
+#history-page table p:last {
+    padding-bottom: 15px;
+}
+
+#history-page table img {
+    margin: 0 15px;
+}
+
+/* Rules */
+
+.rule-list ol li {
+    padding: 15px;
+    text-align: justify;
+}
+
+/* Club Details */
+
+#club-details table {
+    margin-left: 50px;
+    width: 80%;
+}
+
+#club-details td:first-child {
+    width: 25%;
+}
+
+#club-details td {
+    padding: 5px 15px;
+}
+
+#club-details td p {
+    padding: 2px 0;
+    text-align: left;
+}
+
+/* other */
+.text-table td {
+    padding: 10px 20px;
+}
+
+/* competitions */
+
+#competition
+{
+	font-size: 8pt;
+	position: relative;
+}
+
+h1.display-cup
+{
+	font-size: 16pt;
+}
+
+#competition-round1 .oddgroup {
+	background: url(/client/images/competition1-match-odd.gif) right center no-repeat;
+	margin-top: 3px;
+}
+
+#competition-round1 .evengroup {
+	background: url(/client/images/competition1-match-even.gif) right center no-repeat;
+	margin-bottom: 25px;
+}
+
+#competition-round2 .oddgroup {
+	background: url(/client/images/competition2-match-odd.gif) right 11px no-repeat;
+	margin-top: 39px;
+	height: 110px;
+}
+
+#competition-round2 .evengroup {
+	background: url(/client/images/competition2-match-even.gif) right top no-repeat;
+	/* margin-bottom: 99px; */
+	padding-top: 28px;
+}
+
+#competition-round3 .oddgroup {
+	background: url(/client/images/competition3-match.gif) 200px 11px no-repeat;
+	margin-top: 115px;
+}
+
+#competition-final .oddgroup {
+	background: url(/client/images/competitionfinal-match.gif) 252px 11px no-repeat;
+	margin-top: 115px;
+}
+
+#competition-winner .oddgroup {
+	background: url(/client/images/cup-cc9900.gif) left center no-repeat;
+	height: 35px;
+	margin-top: 125px;
+}
+
+#competition-winner .competition-match-team {
+	border: none;
+	line-height: 190%;
+	text-indent: 28px;
+	background: transparent;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.competition-round-title {
+	color: #666;
+	font-size: 13pt;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+.competition-round-title em {
+	font-weight: normal;
+}
+
+.competition-match-team {
+	width: 198px;
+	height: 14px;
+	font-weight: normal;
+	padding: 3px 3px 3px 5px;
+	position: relative;
+	line-height: 140%;
+	background-color: #a57626;
+	color: #fff;
+	background: url(/images/evl-competition-match-team_gn.png) top left no-repeat;
+}
+
+.competition-match-team a {
+	color: #555;
+	text-decoration: none;
+}
+
+.competition-match-team a:hover {
+	text-decoration: underline;
+}
+
+.competition-match-team strong {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 3px;
+	width: 14px;
+	height: 14px;
+	border-left: 1px solid #ccc;
+	text-align: center;
+}
+
+.competition-match-team strong.fixture1 {
+	right: 19px !important;
+	padding: 3px;
+}
+
+.competition-match-date {
+	font-size: 0.8em;
+	color: #999;
+	width: auto;
+	height: 10px;
+	padding: 3px 0 4px 3px;
+}
+
+.competition-match-date a {
+	color: #003366;
+	text-decoration: none;
+}
+
+.competition-match-date a:hover {
+	text-decoration: underline;
+}
+
+.competition-match-date em {
+	text-decoration: none;
+}
+
+.competition-match-date em a {
+	text-decoration: underline;
+	color: #999999;
+}
+
+.competition-match-date em a:hover {
+	text-decoration: underline;
+}
+
+.competition-box-outer {
+	height: 120px;
+	position: relative;
+}
+
+.competition-box {
+	padding-top: 23px;
+	height: 74px;
+}
+
+.competition-box-left-horizontal-line-1 {
+	position: absolute;
+	left: -18px;
+	width: 18px;
+	height: 1px;
+	top: 32px;
+	background-color: #999999;
+}
+
+.competition-box-left-horizontal-line-2 {
+	position: absolute;
+	left: -18px;
+	width: 18px;
+	height: 1px;
+	top: 87px;
+	background-color: #999999;
+}
+
+.competition-box-left-vertical-line-1 {
+	position: absolute;
+	left: -19px;
+	width: 1px;
+	bottom: 87px;
+	background-color: #999999;
+}
+
+.competition-box-left-vertical-line-2 {
+	position: absolute;
+	left: -19px;
+	width: 1px;
+	top: 87px;
+	background-color: #999999;
+}
+
+.competition-box-right-horizontal-line-1 {
+	position: absolute;
+	left: 206px;
+	width: 15px;
+	height: 1px;
+	top: 32px;
+	background-color: #999999;
+}
+
+.competition-box-right-horizontal-line-2 {
+	position: absolute;
+	left: 206px;
+	width: 15px;
+	height: 1px;
+	top: 87px;
+	background-color: #999999;
+}
+
+.competition-box-right-vertical-line {
+	position: absolute;
+	left: 221px;
+	width: 1px;
+	top: 32px;
+	height: 56px;
+	background-color: #999999;
+}
+
+.competition-box-right-horizontal-line-3 {
+	position: absolute;
+	left: 222px;
+	width: 28px;
+	top: 60px;
+	height: 1px;
+	background-color: #999999;
+}
+
+.competition-winner
+{
+	position: relative;
+	top: -10px;
+}
+
+.competition-winner-left-vertical-line
+{
+	position: absolute;
+	left: -19px;
+	width: 19px;
+	height: 1px;
+	top: 10px;
+	background-color: #999999;
+}
+
+/* Fixtures Grid */
+
+.fixtures-grid table th {
+    background-color: #fff;
+}
+
+.fixtures-grid table th, .fixtures-grid table tr td:not(:first-child) {
+    text-align: center;
+}

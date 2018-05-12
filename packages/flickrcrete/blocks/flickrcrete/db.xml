@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btFlickrcrete">
+		<field name="bID" type="I"><key /><unsigned /></field>
+		<field name="flickr_email" type="C" size="50"></field>
+		<field name="display_pagination" type="L"><DEFAULT value="1" /></field>	
+		<field name="display_prev_next" type="L"><DEFAULT value="1" /></field>
+		<field name="display_image_count" type="L"><DEFAULT value="1" /></field>
+		<field name="display_page_numbers" type="I"><DEFAULT value="5" /></field>
+		<field name="user_id" type="C" size="25"></field>
+		<field name="photoset_id" type="C" size="25"></field>
+		<field name="method" type="C" size="15"><DEFAULT value="photostream" /></field>
+		<field name="per_page" type="I"><DEFAULT value="20" /></field>
+		<field name="display_columns" type="I"><DEFAULT value="5" /></field>
+		<field name="enable_lightbox" type="L"><DEFAULT value="1" /></field>
+		<field name="lightbox_mouse_scroll" type="L"><DEFAULT value="1" /></field>
+		<field name="lightbox_effect" type="C" size="10"><DEFAULT value="fade" /></field>
+		<field name="lightbox_title_position" type="C" size="10"><DEFAULT value="inside" /></field>
+		<field name="thumbnail_size" type="I"><DEFAULT value="75" /></field>
+		<field name="image_size" type="I"><DEFAULT value="500" /></field>
+	</table>
+</schema>

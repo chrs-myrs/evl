@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+  <table name="btTweetcrete">
+    <field name="bID" type="I">
+      <key />
+      <unsigned />
+    </field>
+    <field name="showUsername" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showAuthorTimeline" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showTimestamp" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showReplies" type="I">
+      <unsigned />
+      <default value="0" />
+    </field>
+    <field name="showAvatar" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showAvatarTimeline" type="I">
+        <unsigned />
+        <default value="1" />
+    </field>
+    <field name="showFollowLink" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showRetweets" type="I">
+      <unsigned />
+      <default value="0" />
+    </field>
+    <field name="displayLimit" type="I">
+      <unsigned />
+      <default value="3" />
+    </field>
+    <field name="userName" type="C" size="255">
+    </field>
+    <field name="userID" type="I">
+      <unsigned />
+    </field>
+    <field name="oAuthToken" type="C" size="255">
+    </field>
+    <field name="oAuthTokenSecret" type="C" size="255">
+    </field>
+    <field name="dateFormat" type="C" size="255">
+      <default value="F j, Y" />
+    </field>
+    <field name="requestMultiplier" type="I">
+      <unsigned />
+      <default value="1" />
+    </field>
+    <field name="showAuthenticatedUserInTimeline" type="I">
+        <unsigned />
+        <default value="1" />
+    </field>
+    <field name="showHashAndUserData" type="I">
+        <default value="1" />
+    </field>
+    <field name="timelineCacheTTL" type="I">
+        <unsigned />
+        <default value="300" />
+    </field>
+    <field name="showTimestampInWords" type="I">
+        <unsigned />
+        <default value="300" />
+    </field>
+  </table>
+   <table name="btTweetcreteUserOrHashSettings">
+       <field name="assertOrder" type="I">        
+          <AUTOINCREMENT/>
+          <UNSIGNED/>
+          <KEY/>
+       </field>
+       <field name="bID" type="I">
+           <unsigned />
+       </field>
+       <field name="type" type="I">
+           <unsigned />
+       </field>
+       <field name="value" type="C" size="255">
+       </field>
+   </table>
+</schema>

@@ -1,0 +1,89 @@
+v1.7 (February 20, 2014)
+  - New icon and re-branding of package
+  - Changed date format to a drop-down select option
+  - Improved block form editor interface
+  - Added auto-delete of database upon uninstall
+
+v1.6.8 (June 24, 2013)
+FIXES
+  - Linked hashtags have been updated and no longer user v1 API
+  - Hashtag have been updated to use v1.1 API, sorry about that!
+  - Twitter auth was lost when block was edit, this is no longer occurring.
+  - I've come up with some basic user acceptance criteria to run each release through, hopefully reducing errors.
+
+v1.6.7 (March 2, 2013)
+FIXES
+  - Updated to use Twitter API v1.1
+
+v1.6.6 (September 12, 2012)
+FIXES
+  - Removes references to JsonHelper for Concrete5 5.6 compatibility
+
+v1.6.5 (June 26, 2012)
+FIXES
+  - Added a Tweetcrete prefix to all OAuth classes to prevent library conflicts with other Twitter addons
+
+v1.6.4 (June 25, 2012)
+FIXES
+  - Fixes an issue where if you're not displaying enough tweets and you filter out replies and retweets, no tweets display.
+
+v1.6.3 (June 25, 2012)
+FIXES
+  - When filtering retweets and replies, sometimes no tweets would show.  Added some padding to the results so this will only occur in extreme cases.
+
+v1.6.2 (June 25, 2012)
+FIXES
+  - Fixes issue where 1.6.1 wouldn't show any tweets
+
+v1.6.1 (June 25, 2012)
+FIXES
+  - HTTPS links are now converted to hyperlinks
+  - Empty timeline results will no longer produce an array_merge exception
+
+v1.6.0 (March 24, 2011)
+ENHANCEMENTS
+  - Adds ability to specify cache TTL in UI
+  - Replaces use of decode_json in PHP with Concrete's support thereby relaxing PHP requirements
+  - Adds "Timestamp in words" support so that tweet timestamps can be listed like "About 26 minutes ago" 
+
+v1.5.0 (March 22, 2011)
+ENHANCEMENTS
+  - New core timeline factory
+  - Updated TwitterOAuth libraries
+  - Redesigned block add/edit UI
+  - Added preference to hide author from individual tweets
+  - Enhanced use of caching timelines
+  - New image based follow button
+FIXES
+  - Hash tags and user timelines now function in conjunction
+  - User timelines work even when authenticated user is not shown
+  - Timelines are cached for display even when Twitter is down
+
+v1.4.1.1 (February 16, 2011)
+FIXES
+  - Fixed version number
+
+v1.4.1 (January 24, 2011)
+ENHANCEMENTS
+  - Introduces ability to follow multiple users and hash tags
+  - Introduces ability to show avatar with each post
+  - Improved caching
+  
+v1.3 (July 20, 2010)
+ENHANCEMENTS
+  - Leverages Concrete5's caching library (eg. Zend, APC, etc) to store timeline.  If twitter cannot be reached, cached timeline will display.
+  - Added option to display retweets (Thanks to Ben Partner @ WaveQ) 
+
+v1.2
+FIXES
+  - Most logic moved out of view into helper or controller
+
+ENHANCEMENTS
+  - Added support to display avatar
+  - Added follow button that links to user page on Twitter.
+
+v1.1
+FIXES
+  - Increased height of add/edit interface
+  
+v1.0 - Initial revision

@@ -1,0 +1,17 @@
+1.1.0 - Switched to HTTPS for Flickr API
+1.0.9 - Cleaned up UI
+1.0.8 - Updated thumbnail size to pull the Large Square Thumbnail
+1.0.7 - Added Pagination Display Options
+	Fixed fancybox rel links
+1.0.6 - Fixed bug when photo descriptions contained " flickrcrete would break
+	Fixed bug when given user was not the owner of a set the flickr links would return 404
+	Added link to Flickrcrete Settings from block when there is no api key
+	Added restrictions because of Flickr Terms of Use information to form
+	Made some other basic aesthetic changes to the form
+1.0.5 - Fixed URL generation bug
+1.0.4 - Fixed php compatibility issue with SimplyXML::Count()
+	Fixed linkback css bug
+1.0.3 - Fixed bug when displaying on a page with a predefined url parameter
+1.0.2 - Fixed flickr username bug by identifying the user by their flickr email address
+1.0.1 - Changes the way API key was stored
+1.0.0 - Initial release.

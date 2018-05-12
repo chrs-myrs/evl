@@ -1,0 +1,55 @@
+.ccm-tweetcrete-timeline ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+.ccm-tweetcrete-timeline ul li {
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+.ccm-tweet-username {
+  font: normal 18px/23px Helvetica Neue, Helvetica, Arial, san-serif;
+  margin: 0 0 5px 0;
+}
+
+.ccm-tweet-time {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.ccm-tweet-avatar {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+.ccm-tweet-follow-link {
+  background: transparent url(images/follow-button.png) no-repeat top left;
+  display: block;
+  float: left;
+  width: 68px;
+  height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.ccm-tweet-follow-link,
+.ccm-tweet-follow-link:hover,
+.ccm-tweet-follow-link:visited {
+  font: normal 11px/19px Helvetica Neue, Helvetica, Arial, san-serif;
+  color: #fff;
+}
+
+.ccm-tweet-follow-link:hover {
+  background-position: bottom left;
+}
+
+.ccm-tweetcrete-timeline-elements {
+  clear: both;
+  padding: 10px 0;
+}
+
+.ccm-tweetcrete-timeline-elements h4 {
+  margin-bottom: 3px;
+}

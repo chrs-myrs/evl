@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema version="0.3">
+    
+    <table name="twsLeagueTables">
+        <field name="rID" type="I"><key /><unsigned /><autoincrement /></field>
+        <field name="season" type="I"></field>
+        <field name="division" type="I"></field>
+        <field name="team" type="I"></field>
+        <field name="played" type="I"></field>
+        <field name="won" type="I"></field>
+        <field name="drawn" type="I"></field>
+        <field name="lost" type="I"></field>
+        <field name="goalsfor" type="I"></field>
+        <field name="goalsagainst" type="I"></field>
+        <field name="points" type="I"></field>
+        <field name="isLive" type="L" default="1"></field>
+    </table>  
+    
+    <table name="twsSeasons">
+        <field name="sID" type="I"><key /><unsigned /><autoincrement /></field>
+        <field name="name" type="C" size="30"><key /></field>
+        <field name="sortorder" type="I"><unsigned /></field>
+    </table>
+    
+    <table name="twsDivisions">
+        <field name="dID" type="I"><key /><unsigned /><autoincrement /></field>
+        <field name="name" type="C" size="30"><key /></field>
+        <field name="sortorder" type="I"><unsigned /></field>
+    </table>
+    
+    <table name="twsTeams">
+        <field name="tID" type="I"><key /><unsigned /><autoincrement /></field>
+        <field name="name" type="C" size="36"><key /></field>
+        <field name="sortorder" type="I"><unsigned /></field>
+        <field name="groupID" type="I" default="0"><unsigned /></field>
+    </table>
+    
+</schema>
