@@ -16,7 +16,7 @@ class DashboardLeagueTablesController extends Controller {
         
         public function delete_record() {
             $db = Loader::db();
-            $id = mysql_real_escape_string($_POST['id']);
+            $id = $db->escape($_POST['id']);
             $db->execute("DELETE FROM twsLeagueTables WHERE rID=?", array($id));
             echo "OK";
             exit;
