@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('C5_EXECUTE') or die("Access Denied.");
 
 class DashboardLeagueTablesDivisionsController extends Controller {
@@ -17,7 +17,7 @@ class DashboardLeagueTablesDivisionsController extends Controller {
         public function save_sort() {
 
             $db = Loader::db();
-            $orderstring = mysql_real_escape_string($_POST['order']);
+            $orderstring = $db->escape($_POST['order']);
             $order = explode(',', $orderstring);
             echo sizeof($order).'#'.$orderstring;
             for($i = 0 ; $i < count($order) ; $i++) {
@@ -28,14 +28,14 @@ class DashboardLeagueTablesDivisionsController extends Controller {
         
         public function new_division() {
             $db = Loader::db();
-            $name = mysql_real_escape_string($_POST['name']);
+            $name = $db->escape($_POST['name']);
             $db->execute("INSERT INTO twsDivisions SET name=?, sortOrder=0", array($name));
             exit;
         }
         
         public function delete_division() {
             $db = Loader::db();
-            $id = mysql_real_escape_string($_POST['id']);
+            $id = $db->escape($_POST['id']);
             $check = $db->execute("SELECT rID FROM twsLeagueTables WHERE division=?", array($id));
             if($check->RecordCount()>0) {
                 echo "Cannot delete, there are still records associated with this division.";
